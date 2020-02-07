@@ -1,0 +1,45 @@
+.blobMain {
+  position: fixed;
+  top: -150px;
+  right: -700px;
+  z-index: -1;
+}
+
+.blobMain svg {
+  width: 1300px;
+  height: 1300px;
+  opacity: 0.5;
+}
+
+.blobSecondary {
+  position: fixed;
+  top: -250px;
+  right: -750px;
+  z-index: -1;
+}
+
+.blobSecondary svg {
+  width: 1500px;
+  opacity: 0.1;
+  height: 1500px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .blobMain {
+    opacity: 0.3;
+  }
+
+  .blobSecondary {
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blobMain {
+    display: none;
+  }
+
+  .blobSecondary {
+    opacity: 0.5;
+  }
+}
